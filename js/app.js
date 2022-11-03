@@ -78,15 +78,15 @@ function updateStatusText(isOwner, checking) {
   const statusText = document.querySelector('.owner-status');
   if(checking) {
     if(isOwner) {
-      statusText.innerText = `You do own ${COLLECTION_NAME}!!  Let's see how many${renderDots(dots)}`;
+      statusText.innerText = `You do own Colorrings!!  Let's see how many`;
     } else {
-      statusText.innerText = `Checking to see if you own any Colorrings  ${renderDots(dots)}`;
+      statusText.innerText = `Checking to see if you own any Colorrings `;
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! 😻`;
+      statusText.innerText = `You own ${editions.length} Colorrings!! `;
     } else {
-      statusText.innerText = `You don't own any ${COLLECTION_NAME} 😿`;
+      statusText.innerText = `You don't own any Colorrings`;
     }
   }
   dots = dots === 3 ? 1 : dots + 1;

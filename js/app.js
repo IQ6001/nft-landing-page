@@ -80,7 +80,7 @@ function updateStatusText(isOwner, checking) {
     if(isOwner) {
       statusText.innerText = `You do own Colorrings!!  Let's see how many`;
     } else {
-      statusText.innerText = `Checking to see if you own any Colorrings `;
+      statusText.innerText = `Checking to see if you own any Colorrings... `;
     }
   } else {
     if(isOwner) {
